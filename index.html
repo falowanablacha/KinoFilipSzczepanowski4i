@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kino</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Witaj w Kinie!</h1>
+    <form action="" onsubmit="generuj(event)">
+        <label for="x">Liczba miejsc w rzędzie</label>
+        <input type="number" name="x" id="x" max="25"> <br>
+        <label for="y">Liczba rzędów</label>
+        <input type="number" name="y" id="y" max="30">
+        <input type="submit" value="generuj" class="generuj">
+    </form>
+    <section class="wygenerowane">
+        <div id="checkboxContainer"></div>
+    </section>
+    
+    <button onclick="policzZaznaczone()">Wybierz</button>
+    <p id="wynik"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

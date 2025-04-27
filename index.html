@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <h1>Witaj w Kinie!</h1>
+
     <form action="" onsubmit="generuj(event)">
         <label for="x">Liczba miejsc w rzędzie</label>
         <input type="number" name="x" id="x" max="25"> <br>
@@ -16,11 +18,18 @@
         <input type="number" name="y" id="y" max="30">
         <input type="submit" value="generuj" class="generuj">
     </form>
+
     <section class="wygenerowane">
         <div id="checkboxContainer"></div>
     </section>
-    
-    <button onclick="policzZaznaczone()">Wybierz</button>
+
+    <div class="przyciski">
+        <button onclick="policzZaznaczone()">Wybierz</button>
+        <button onclick="obliczCene()">Złóż zamówienie</button>
+    </div>
+
+    <div id="biletyContainer"></div>
+
     <p id="wynik"></p>
 
     <script src="main.js"></script>
